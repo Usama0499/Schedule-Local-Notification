@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/scheduleFragment">
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.mindbuffer.localnotification.fragments.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_scheduleFragment_to_datePickerDialogFragment"
+            app:destination="@id/datePickerDialogFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_timePickerDialogFragment"
+            app:destination="@id/timePickerDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/datePickerDialogFragment"
+        android:name="com.mindbuffer.localnotification.fragments.DatePickerDialogFragment"
+        android:label="fragment_date_picker_dialog"
+        tools:layout="@layout/fragment_date_picker_dialog" />
+    <dialog
+        android:id="@+id/timePickerDialogFragment"
+        android:name="com.mindbuffer.localnotification.fragments.TimePickerDialogFragment"
+        android:label="fragment_time_picker_dialog"
+        tools:layout="@layout/fragment_time_picker_dialog" />
+</navigation>

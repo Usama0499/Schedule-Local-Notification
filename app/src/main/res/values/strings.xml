@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Schedule Notification</string>
+
+    <string name="selectDate">Select Date</string>
+    <string name="selectTime">Select Time</string>
+    <string name="done">Done</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="scheduleNotification">Schedule Notification</string>
+    <string name="err_empty">Field is require</string>
+
+    <string name="error_date_time">The selected date-time must be greater than the current date and time.</string>
+
+</resources>
